@@ -66,7 +66,7 @@ if submit_button:
      predicted.columns = ["Salary"]
      final = pd.concat([salary, predicted], axis = 1)
      
-     final.to_sql('salary_predict', con = engine, if_exists = 'replace', index= False)
+     #final.to_sql('salary_predict', con = engine, if_exists = 'replace', index= False)
      
      st.table(final)
     
